@@ -19,6 +19,7 @@
   -n # log not found (404)
   -c "name=val;name2=val2"
   -v # verbose
+  -d # debug
 
 == REQUIREMENTS:
 
