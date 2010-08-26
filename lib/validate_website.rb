@@ -52,8 +52,8 @@ class ValidateWebsite
            "Basic http authentification") { |v| @options[:auth] = v }
       o.on("-n", "--not-found", "Log not found url") { |v| @options[:not_found] = v }
       o.on("-c", "--cookies=val", "Set defaults cookies") { |v| @options[:cookies] = v }
-      o.on("-v", "--verbose", "Verbose") { |v| @options[:verbose] = v }
-      o.on("-d", "--debug", "Debug") { |v| @options[:debug] = v }
+      o.on("-v", "--verbose", "show detail of validator errors") { |v| @options[:verbose] = v }
+      o.on("-d", "--debug", "show anemone log") { |v| @options[:debug] = v }
 
       o.separator ""
       o.on_tail("-h", "--help", "Show this help message.") { puts o; exit }
